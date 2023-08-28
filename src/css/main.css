@@ -1,0 +1,394 @@
+/* Base */
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+:root {
+  --container-width: 1296px;
+  --container-padding: 15px;
+  --font-main: "Stolzl", "Gotham_ProBlack", "Gotham_ProBold", sans-serif;
+  --font-accent: "Playfair Display", serif;
+  --page-bg: #210e09;
+  --text-color: #fff;
+  --accent: #ac182c;
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
+
+.dark {
+  --page-bg: fff;
+  --text-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+}
+
+@font-face {
+  font-family: "Stolzl";
+  src: url("../../fonts/stolzl_regular-webfont.woff2") format("woff2"), url("../../fonts/stolzl_regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham_ProBlack";
+  src: url("../../fonts/gothampro_black.woff2") format("woff2"), url("../../fonts/gothampro_black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham_ProBold";
+  src: url("../../fonts/gothampro_bold.woff2") format("woff2"), url("../../fonts/gothampro_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.container {
+  padding: 0 var(--container-padding);
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.container-right {
+  /* overflow-x: hidden; */
+  padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+}
+@media (max-width: var(--laptop-size)) {
+  .container-right {
+    padding-left: var(--container-padding);
+  }
+}
+
+.container-left {
+  /* overflow-x: hidden; */
+  padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+}
+@media (max-width: var(--laptop-size)) {
+  .container-left {
+    padding-right: var(--container-padding);
+  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #e3e3e3;
+}
+
+/* Blocks */
+.header {
+  padding: 30px 0 0 0;
+  margin: 0 0 55px 0;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 180px;
+  height: 40px;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  margin-right: 30px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header__item:last-child {
+  margin-right: 0;
+}
+.header__btn {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 2px solid var(--accent, #d5621d);
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.main-page {
+  margin: 0 0 120px 0;
+}
+.main-page__columns {
+  display: flex;
+}
+.main-page__left-columns {
+  position: relative;
+  width: 856px;
+  height: 540px;
+}
+.main-page__main-img {
+  width: 856px;
+  height: 540px;
+}
+.main-page__year {
+  position: absolute;
+  top: 311px;
+  left: 80px;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  padding: 7px 20px 7px 20px;
+  align-items: flex-start;
+  border-radius: 5px;
+  background: #fff;
+  color: var(--black, #210e09);
+}
+.main-page__description {
+  max-width: 623px;
+  position: absolute;
+  bottom: 45px;
+  left: 60px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.main-page__right-columns {
+  margin-left: 24px;
+  width: 416px;
+  height: 502px;
+}
+.main-page__btn-immediate, .main-page__btn-soon {
+  width: 208px;
+  padding: 12px 10px 7px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0px 0px;
+  background: rgba(213, 98, 29, 0.05);
+}
+.main-page__row-btn {
+  display: flex;
+}
+.main-page__posters {
+  padding: 39px 35px 37px 35px;
+  width: 416px;
+  height: 502px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #d5621d;
+}
+.main-page__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  -moz-columns: 26px;
+       columns: 26px;
+}
+.main-page__item {
+  width: 160px;
+  height: 200px;
+}
+.kitchen__subtitle {
+  padding: 7px 20px 7px 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  background: #fff;
+  color: #210e09;
+}
+.kitchen__title {
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+.kitchen__subtitle, .kitchen__title {
+  display: flex;
+  justify-content: center;
+}
+.kitchen__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-columns: 104px;
+       columns: 104px;
+  gap: 56px;
+}
+.kitchen__item {
+  display: flex;
+  height: 110px;
+}
+.kitchen__img {
+  width: 110px;
+  margin-right: 25px;
+}
+.kitchen__description-dish {
+  max-width: 351px;
+}
+.kitchen__dish-name, .kitchen__price {
+  display: inline-block;
+}
+.kitchen__dish-name {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin: 0 122px 5.5px 0;
+}
+.kitchen__price {
+  padding: 10px 20px 7px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--accent, #d5621d);
+}
+.kitchen__weight {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 8px;
+  color: #d5621d;
+}
+.kitchen__ingridients {
+  font-size: 14px;
+  line-height: 150%;
+}

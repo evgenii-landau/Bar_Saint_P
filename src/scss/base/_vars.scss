@@ -1,0 +1,20 @@
+:root {
+	--container-width: 1296px;
+	--container-padding: 15px;
+
+	--font-main: 'Stolzl', 'Gotham_ProBlack', 'Gotham_ProBold', sans-serif;
+	--font-accent: 'Playfair Display', serif;
+
+	--page-bg: #210e09;
+	--text-color: #fff;
+	--accent: #ac182c;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+	--page-bg: fff;
+	--text-color: #fff;
+}

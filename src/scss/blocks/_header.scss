@@ -1,0 +1,50 @@
+.header {
+	padding: 30px 0 0 0;
+	margin: 0 0 55px 0;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__link {
+	}
+
+	&__logo {
+		width: 180px;
+		height: 40px;
+	}
+
+	&__nav {
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 30px;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__btn {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		letter-spacing: 0.7px;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 15px 30px;
+		border-radius: 5px;
+		border: 2px solid var(--accent, #d5621d);
+	}
+}

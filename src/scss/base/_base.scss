@@ -1,0 +1,31 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+}
+
+@font-face {
+	font-family: 'Stolzl';
+	src: url('../../fonts/Stolzl-Regular.woff2') format('woff2'), url('../../fonts/Stolzl-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham_ProBlack';
+	src: url('../../fonts/gothampro_black.woff2') format('woff2'),
+		url('../../fonts/gothampro_black.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham_ProBold';
+	src: url('../../fonts/gothampro_bold.woff2') format('woff2'), url('../../fonts/gothampro_bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
