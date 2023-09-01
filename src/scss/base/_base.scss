@@ -8,6 +8,35 @@ body {
 	font-family: var(--font-main);
 }
 
+a {
+	color: inherit;
+}
+
+h2 {
+	font-family: 'Gotham_ProBold';
+	font-size: 40px;
+	line-height: 150%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.subtitle__style {
+	display: block;
+	height: 38px;
+	margin: 0 auto;
+	padding: 10px 20px 7px 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+
+	border-radius: 5px;
+	background: #fff;
+	color: #210e09;
+}
+
 @font-face {
 	font-family: 'Stolzl';
 	src: url('../../fonts/Stolzl-Regular.woff2') format('woff2'), url('../../fonts/Stolzl-Regular.woff') format('woff');

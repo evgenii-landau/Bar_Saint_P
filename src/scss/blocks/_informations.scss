@@ -1,0 +1,31 @@
+.informations {
+	margin: 0 auto;
+
+	&__columns {
+		display: flex;
+		gap: 44px;
+	}
+
+	&__column {
+		max-width: 376px;
+	}
+
+	&__column-img {
+		width: 416px;
+	}
+
+	&__subtitle {
+		width: 276px;
+	}
+
+	&__title {
+		margin-bottom: 35px;
+		text-align: center;
+	}
+
+	&__descritpion {
+		text-align: center;
+		font-size: 14px;
+		line-height: 150%;
+	}
+}

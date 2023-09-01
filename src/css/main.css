@@ -114,9 +114,37 @@ body {
   font-family: var(--font-main);
 }
 
+a {
+  color: inherit;
+}
+
+h2 {
+  font-family: "Gotham_ProBold";
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.subtitle__style {
+  display: block;
+  height: 38px;
+  margin: 0 auto;
+  padding: 10px 20px 7px 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  background: #fff;
+  color: #210e09;
+}
+
 @font-face {
   font-family: "Stolzl";
-  src: url("../../fonts/stolzl_regular-webfont.woff2") format("woff2"), url("../../fonts/stolzl_regular-webfont.woff") format("woff");
+  src: url("../../fonts/Stolzl-Regular.woff2") format("woff2"), url("../../fonts/Stolzl-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -237,7 +265,7 @@ body {
 }
 
 .logo {
-  font-size: 32px;
+  font-size: 33px;
 }
 
 .main-page {
@@ -274,12 +302,6 @@ body {
   position: absolute;
   bottom: 45px;
   left: 60px;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 .main-page__right-columns {
   margin-left: 24px;
@@ -321,22 +343,9 @@ body {
   height: 200px;
 }
 .kitchen__subtitle {
-  padding: 7px 20px 7px 20px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 150%;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  background: #fff;
-  color: #210e09;
+  width: 244px;
 }
 .kitchen__title {
-  font-size: 40px;
-  line-height: 150%;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   margin-bottom: 80px;
 }
 .kitchen__subtitle, .kitchen__title {
@@ -350,6 +359,7 @@ body {
   -moz-columns: 104px;
        columns: 104px;
   gap: 56px;
+  margin-bottom: 96px;
 }
 .kitchen__item {
   display: flex;
@@ -389,6 +399,64 @@ body {
   color: #d5621d;
 }
 .kitchen__ingridients {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.slider-btn-next,
+.slider-btn-prev {
+  padding: 15px 15px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../img/slider-button/slider-button.svg);
+  background-repeat: no-repeat;
+}
+
+.slider-btn-next {
+  transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.kitchen__all-menu-button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  width: 172px;
+  padding: 15px 30px;
+  font-family: "Gotham_ProBold";
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #d5621d;
+}
+
+.informations {
+  margin: 0 auto;
+}
+.informations__columns {
+  display: flex;
+  gap: 44px;
+}
+.informations__column {
+  max-width: 376px;
+}
+.informations__column-img {
+  width: 416px;
+}
+.informations__subtitle {
+  width: 276px;
+}
+.informations__title {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.informations__descritpion {
+  text-align: center;
   font-size: 14px;
   line-height: 150%;
 }
